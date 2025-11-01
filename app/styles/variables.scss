@@ -1,0 +1,45 @@
+@mixin flex (
+  $align: center,
+  $justify: center,
+  $direction: row,
+  $gap: null,
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+
+  @if $gap != null {
+    gap: $gap;
+  }
+}
+
+@mixin grid (
+  $cols: null,
+  $rows: null,
+  $gap: null,
+  $align: null,
+  $justify: null
+) {
+  display: grid;
+
+  @if $cols != null {
+    grid-template-columns: $cols;
+  }
+
+  @if $rows != null {
+    grid-template-rows: $rows;
+  }
+
+  @if $gap != null {
+    gap: $gap;
+  }
+
+  @if $align != null {
+    align-items: $align;
+  }
+
+  @if $justify != null {
+    justify-items: $justify;
+  }
+}
