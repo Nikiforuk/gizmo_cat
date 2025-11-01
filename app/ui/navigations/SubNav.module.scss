@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+@import '../../globals.css';
+
+.nav {
+  @include flex(_, $justify: center);
+  background: var(--black300);
+
+  &_list {
+    @include flex($align: center, $justify: space-between);
+  }
+
+  &_link {
+    @include flex(_, $justify: center);
+    padding: 0px 48px;
+    gap: 8px;
+  }
+
+  &_text {
+    color: var(--gray600);
+  }
+
+  &_line {
+   display: block;
+   width: 1px;
+   height: 28px;
+   color: #585858;
+   background: #585858;
+  }
+}
