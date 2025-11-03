@@ -4,12 +4,14 @@
   --black200: #353535;
   --black300: #2E2E2E;
   --black400: #2C2C2C;
+  --dark-purple: #211C24;
   --gray200: #F5F5F5;
   --gray300: #EDEDED;
   --gray400: #F6F6F6;
   --gray500: #EAEAEA;
   --gray600: #969696;
   --gray700: #909090;
+  --gray800: #7A777C;
 }
 
 html,
@@ -29,6 +31,11 @@ svg {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -69,7 +76,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .root-container {
   margin: 0 auto;
-  max-width: 1440px;
   width: 100%;
   height: 100%;
 }

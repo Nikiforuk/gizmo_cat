@@ -1,0 +1,108 @@
+@import '../../styles/variables.scss';
+@import '../../globals.css';
+
+.container {
+  @include flex(_, $justify: center);
+}
+
+.groupBanners {
+  flex: 1;
+  width: 50%;
+}
+
+.bigBanner {
+  flex: 1;
+  width: 50%;
+}
+
+.wideSquare {
+  @include flex($align: center, $justify: flex-start);
+
+  &_textBlock {
+    padding-right: 16px
+  }
+
+  &_title {
+    @extend %h49-40;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: var(--black);
+  }
+
+  &_desc {
+    @extend %p14-24;
+    font-weight: 400;
+    color: var(--gray700);
+  }
+}
+
+.squares {
+  @include flex($align: center, $justify: flex-start);
+}
+
+.squareBanner {
+  @include flex($align: center, $justify: flex-start);
+  padding-right: 48px;
+  background: var(--gray300);
+  flex: 1;
+  height: 272px;
+
+  &_hpImg {
+    margin-right: 48px;
+  }
+
+  &_vrImg {
+    margin-right: 16px;
+  }
+
+  &_title {
+    @extend %h29-40;
+    margin-bottom: 8px;
+    font-weight: 400;
+  }
+
+  &_desc {
+    @extend %p14-24;
+    color: var(--gray700);
+    font-weight: 400;
+  }
+
+  &_max,
+  &_pro {
+    font-weight: 600;
+  }
+}
+
+.bigBanner {
+  @include flex($align: center, $justify: space-between);
+  background: var(--gray300);
+
+  &_content {
+    margin-left: 56px;
+  }
+
+  &_title {
+    @extend %h64-56;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: var(--black);
+  }
+
+  &_air {
+    font-weight: 600;
+  }
+
+  &_desc {
+    @extend %p14-24;
+    margin-bottom: 16px;
+    color: var(--gray700);
+  }
+}
+
+.anotherBackground {
+  background: var(--black200);
+}
+
+.anotherColors {
+  color: var(--background);
+}

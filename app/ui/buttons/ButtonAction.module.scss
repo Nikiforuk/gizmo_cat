@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+@import '../../globals.css';
+
+.button {
+  @extend %p16-24;
+  border-radius: 8px;
+  border: 1px solid var(--background);
+  background: var(--dark-purple);
+  padding: 16px 56px;
+  height: 56px;
+  cursor: pointer;
+  color: var(--background);
+}

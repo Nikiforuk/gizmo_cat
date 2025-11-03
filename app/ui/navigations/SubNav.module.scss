@@ -2,16 +2,16 @@
 @import '../../globals.css';
 
 .nav {
-  @include flex(_, $justify: center);
+  @include flex($align: center, $justify: center);
   background: var(--black300);
-
+  padding: 8px 0px;
+  
   &_list {
     @include flex($align: center, $justify: space-between);
   }
 
   &_link {
-    @include flex(_, $justify: center);
-    padding: 0px 48px;
+    @include flex($align: center, $justify: center);
     gap: 8px;
   }
 
@@ -23,7 +23,8 @@
    display: block;
    width: 1px;
    height: 28px;
-   color: #585858;
+   margin: 0px 51px 0px 51px;
    background: #585858;
   }
 }
+

@@ -25,9 +25,8 @@
   gap: 52px;
 
   &_item {
-    font-size: 16px;
+    @extend %p16-19;
     font-weight: 400;
-    line-height: 19px;
     color: var(--gray700);
   }
 }
