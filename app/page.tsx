@@ -1,4 +1,5 @@
 import Banner from "./components/banners/Banner";
+import FeaturedBanners from "./components/banners/FeaturedBanners";
 import SmallerBanners from "./components/banners/SmallerBanners";
 import Category from "./components/categories/Category";
 import Products from "./components/products/Products";
@@ -10,6 +11,7 @@ export default function Home() {
       <SmallerBanners />
       <Category />
       <Products />
+      <FeaturedBanners />
     </main>
   );
 }
