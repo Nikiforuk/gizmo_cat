@@ -68,6 +68,8 @@ export default function SmallerBanners() {
             you love with a spacious Liquid Retina display.
           </p>
           <ButtonAction
+            radius={9}
+            width={184}
             bgColor='#EDEDED'
             borderColor='black'
             textColor='black'

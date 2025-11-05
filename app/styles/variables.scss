@@ -3,11 +3,13 @@
   $justify: center,
   $direction: row,
   $gap: null,
+  $wrap: nowrap,
 ) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
   flex-direction: $direction;
+  flex-wrap: $wrap;
 
   @if $gap != null {
     gap: $gap;
@@ -66,6 +68,16 @@
 
 %h25-32 {
   font-size: 25px;
+  line-height: 32px;
+}
+
+%p24-24 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+%p18-32 {
+  font-size: 18px;
   line-height: 32px;
 }
 

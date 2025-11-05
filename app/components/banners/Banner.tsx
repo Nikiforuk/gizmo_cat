@@ -25,7 +25,7 @@ export default function Banner() {
             </span>
           </h1>
           <p className={styles.content_desc}>Created to change everything for the better. For everyone</p>
-          <ButtonAction callback={handleClick} text="Shop now" />
+          <ButtonAction radius={9} width={184} callback={handleClick} text="Shop now" />
           </div>
           <div className={styles.rightBlock}>
             <Image src={iphoneImg} alt="iphone-image" />

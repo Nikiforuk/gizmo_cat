@@ -2,6 +2,10 @@
 @import '../../globals.css';
 
 .container {
+  background: var(--gray100);
+}
+
+.content {
   max-width: 1150px;
   margin: 0 auto;
   padding: 80px 0px;

@@ -25,39 +25,41 @@ export default function Category() {
   }
   return (
     <section className={styles.container}>
-      <div className={styles.top}>
-        <h2 className={styles.top_title}>
-          Browse By Category
-        </h2>
-        <div className={styles.top_groupButtons}>
-          <ButtonArrow callback={handleClickLeft} icon={arrowLeftIcon} />
-          <ButtonArrow callback={handleClickRight} icon={arrowRightIcon} />
+        <div className={styles.content}>
+          <div className={styles.top}>
+          <h2 className={styles.top_title}>
+            Browse By Category
+          </h2>
+          <div className={styles.top_groupButtons}>
+            <ButtonArrow callback={handleClickLeft} icon={arrowLeftIcon} />
+            <ButtonArrow callback={handleClickRight} icon={arrowRightIcon} />
+          </div>
         </div>
-      </div>
-      <div className={styles.categories}>
-        <div className={styles.category}>
-          <Image width={48} height={48} src={categoryPhonesIcon} alt='phones-icon' />
-          <p className={styles.category_text}>Phones</p>
-        </div>
-        <div className={styles.category}>
-          <Image width={48} height={48} src={categoryWatchesIcon} alt='phones-icon' />
-          <p className={styles.category_text}>Smart Watches</p>
-        </div>
-        <div className={styles.category}>
-          <Image width={48} height={48} src={categoryHpIcon} alt='phones-icon' />
-          <p className={styles.category_text}>Cameras</p>
-        </div>
-        <div className={styles.category}>
-          <Image width={48} height={48} src={categoryCamerasIcon} alt='phones-icon' />
-          <p className={styles.category_text}>Computers</p>
-        </div>
-        <div className={styles.category}>
-          <Image width={48} height={48} src={categoryComputersIcon} alt='phones-icon' />
-          <p className={styles.category_text}>Phones</p>
-        </div>
-        <div className={styles.category}>
-          <Image width={48} height={48} src={categoryGamingIcon} alt='phones-icon' />
-          <p className={styles.category_text}>Gaming</p>
+        <div className={styles.categories}>
+          <div className={styles.category}>
+            <Image width={48} height={48} src={categoryPhonesIcon} alt='phones-icon' />
+            <p className={styles.category_text}>Phones</p>
+          </div>
+          <div className={styles.category}>
+            <Image width={48} height={48} src={categoryWatchesIcon} alt='phones-icon' />
+            <p className={styles.category_text}>Smart Watches</p>
+          </div>
+          <div className={styles.category}>
+            <Image width={48} height={48} src={categoryHpIcon} alt='phones-icon' />
+            <p className={styles.category_text}>Cameras</p>
+          </div>
+          <div className={styles.category}>
+            <Image width={48} height={48} src={categoryCamerasIcon} alt='phones-icon' />
+            <p className={styles.category_text}>Computers</p>
+          </div>
+          <div className={styles.category}>
+            <Image width={48} height={48} src={categoryComputersIcon} alt='phones-icon' />
+            <p className={styles.category_text}>Phones</p>
+          </div>
+          <div className={styles.category}>
+            <Image width={48} height={48} src={categoryGamingIcon} alt='phones-icon' />
+            <p className={styles.category_text}>Gaming</p>
+          </div>
         </div>
       </div>
     </section>
