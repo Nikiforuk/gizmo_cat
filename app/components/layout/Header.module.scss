@@ -1,0 +1,12 @@
+@import '../../globals.css';
+@import '../../styles/variables.scss';
+
+.container {
+  @include flex(center, center);
+  padding: 16px 0px;
+}
+
+.flexBox {
+  @include flex($align: center, $justify: center);
+  gap: 32px;
+}

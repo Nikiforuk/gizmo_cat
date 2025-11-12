@@ -1,0 +1,11 @@
+@import '../../globals.css';
+@import '../../styles/variables.scss';
+
+.button {
+  @extend %p16-24;
+  border: 1px solid var(--white);
+  background: var(--accent-dark-purple);
+  height: 56px;
+  cursor: pointer;
+  color: var(--white);
+}

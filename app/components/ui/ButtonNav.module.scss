@@ -1,0 +1,8 @@
+@import '../../globals.css';
+@import '../../styles/variables.scss';
+
+.button {
+  border: none;
+  background: var(--background);
+  padding: 0;
+}

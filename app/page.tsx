@@ -1,21 +1,21 @@
-import Banner from "./components/banners/Banner";
-import Banner2 from "./components/banners/Banner2";
-import FeaturedBanners from "./components/banners/FeaturedBanners";
-import SmallerBanners from "./components/banners/SmallerBanners";
-import Category from "./components/categories/Category";
-import DiscountProducts from "./components/products/DiscountProducts";
-import Products from "./components/products/Products";
+import Category from './components/ui/Category';
+import DiscountProducts from './components/ui/DiscountProducts';
+import FirstBanner from './components/ui/FirstBanner';
+import Popular from './components/ui/Popular';
+import Products from './components/ui/Products';
+import SecondBanner from './components/ui/SecondBanner';
+import SmallerBanners from './components/ui/SmallerBanners';
 
 export default function Home() {
   return (
     <main className="root-container">
-      <Banner />
+      <FirstBanner />
       <SmallerBanners />
       <Category />
       <Products />
-      <FeaturedBanners />
+      <Popular />
       <DiscountProducts />
-      <Banner2 />
+      <SecondBanner />
     </main>
   );
 }

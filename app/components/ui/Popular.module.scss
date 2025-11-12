@@ -1,0 +1,48 @@
+@import '../../globals.css';
+@import '../../styles/variables.scss';
+
+.container {
+  @include flex($align: center, $justify: center);
+  width: 100%;
+}
+
+.content {
+  padding: 40px 0px 56px 0px;
+  width: 100%;
+}
+
+.firstContent {
+  background: var(--white);
+}
+.secondContent {
+  background: var(--background-secondary);
+}
+.thirdContent {
+  background: var(--gray-200);
+}
+.fourthContent {
+  background: var(--black-300);
+  color: var(--white)
+}
+
+.top {
+  @include flex($align: center, $justify: flex-end);
+  margin-bottom: 30px;
+}
+
+.textBlock {
+  @include flex($align: flex-start, $justify: center, $direction: column);
+  padding: 32px;
+  gap: 16px;
+
+  &_name {
+    @extend %h33-48;
+    font-weight: 300;
+  }
+
+  &_desc {
+    @extend %p14-24;
+    font-weight: 400;
+    color: var(--gray-600);
+  }
+}

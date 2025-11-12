@@ -1,0 +1,38 @@
+@import '../../globals.css';
+@import '../../styles/variables.scss';
+
+.container {
+  background: linear-gradient(180deg, var(--accent-dark-purple) 0%, var(--accent-dark-purple) 100%);
+  padding: 0px 160px;
+}
+
+.content {
+  @include flex($align: center, $justify: space-between);
+  gap: 24px;
+
+  &_title {
+    @extend %h25-32;
+    font-weight: 600;
+    color: var(--gray-700);
+  }
+
+  &_smashTitle {
+    @extend %h96-72;
+    font-weight: 300;
+    color: var(--white);
+  }
+
+  &_pro {
+    font-weight: 700;
+  }
+
+  &_desc {
+    @extend %p18-24;
+    color: var(--gray-600);
+  }
+}
+
+.leftBlock {
+  @include flex($align: flex-start, $justify: center, $direction: column);
+  gap: 32px;
+}

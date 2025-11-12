@@ -1,28 +1,43 @@
 :root {
-  --background: #ffffff;
-  --white100: #F9F9F9;
+  /* === Base Colors === */
+  --white: #ffffff;
   --black: #000000;
-  --black200: #353535;
-  --black300: #2E2E2E;
-  --black400: #2C2C2C;
-  --dark-purple: #211C24;
-  --gray100: #FAFAFA; 
-  --gray200: #F5F5F5;
-  --gray300: #EDEDED;
-  --gray400: #F6F6F6;
-  --gray500: #EAEAEA;
-  --gray600: #969696;
-  --gray700: #909090;
-  --gray800: #7A777C;
-  --gray900: #787878;
-  --gray1000: #CFCFCF;
+
+  /* === Backgrounds === */
+  --background-primary: #ffffff;
+  --background-secondary: #f9f9f9;
+  --background-light: #dfdfdf;
+  --background-dark: #211c24;
+
+  /* === Grayscale Palette === */
+  --gray-50: #fafafa;
+  --gray-100: #f5f5f5;
+  --gray-200: #ededed;
+  --gray-300: #f6f6f6;
+  --gray-400: #eaeaea;
+  --gray-500: #969696;
+  --gray-600: #909090;
+  --gray-650: #656565;
+  --gray-700: #7a777c;
+  --gray-800: #787878;
+  --gray-900: #cfcfcf;
+
+  /* === Black Shades === */
+  --black-100: #353535;
+  --black-200: #2e2e2e;
+  --black-300: #2c2c2c;
+
+  /* === Accent Colors === */
+  --accent-dark-purple: #211c24;
 }
+
+
 
 html,
 body {
   height: 100%;
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--whit);
+  color: var(--black);
   font-family: var(--font-roboto), sans-serif;
   margin: 0;
 }

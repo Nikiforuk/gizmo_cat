@@ -1,0 +1,40 @@
+@import '../../globals.css';
+@import '../../styles/variables.scss';
+
+.container {
+  @include flex(_, $justify: space-between, $direction: column);
+  padding: 24px 20px;
+  border-radius: 9px;
+  background: var(--gray-300);
+}
+
+.top {
+  @include flex($align: center, $justify: flex-end);
+  margin-bottom: 16px;
+}
+
+.product {
+  @include flex($align: center, $justify: center);
+  margin-bottom: 16px;
+}
+
+.textBlock {
+  @include flex($align: center, $justify: center, $direction: column);
+  margin-bottom: 24px;
+
+  &_name {
+    @extend %p16-24;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  &_price {
+    @extend %p24-24;
+    font-weight: 500;
+  }
+}
+
+.option {
+  @include flex($align: center, $justify: center);
+}

@@ -1,0 +1,32 @@
+@import '../../globals.css';
+@import '../../styles/variables.scss';
+
+.container {
+  background: var(--gray-50);
+}
+
+.content {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 80px 0px;
+}
+
+.top {
+  @include flex($align: center, $justify: space-between);
+  margin-bottom: 32px;
+
+  &_title {
+    @extend %h25-32;
+    font-weight: 400;
+    color: var(--black);
+  }
+
+  &_groupButtons {
+    @include flex($align: center, $justify: center);
+    gap: 16px;
+  }
+}
+
+.categories {
+  @include flex($align: center, $justify: space-between);
+}
